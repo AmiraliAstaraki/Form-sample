@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form sample</title>
+
+    <link rel="stylesheet" href="node_modules\@fortawesome\fontawesome-free\css\all.css">
+
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: arial;
+            direction: ltr;
+        }
+
+        body {
+
+            background-color: #d89dff;
+        }
+
+        h1 {
+
+            text-align: center;
+            margin: 20px 0px;
+        }
+
+        section {
+            background-color: #ffffff;
+            width: 40%;
+            margin: 0px auto 10px auto;
+            position: relative;
+        }
+
+        p#xmark{
+
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 20px;
+        }
+
+        div#profile {
+
+            background-color: #8bc050;
+            color: #535353;
+            font-size: 180px;
+            width: 250px;
+            height: 250px;
+            margin: 20px auto 20px auto;
+            text-align: center;
+            display: block;
+            border-radius: 50%;
+        }
+
+        div#profile i {
+
+            margin: 20px auto;
+        }
+
+        div#form {
+
+            padding: 15px;
+        }
+
+
+        label#uname,
+        label#password {
+
+            font-weight: 700;
+            color: #242424;
+        }
+
+        input#uname,
+        input#password {
+
+
+            display: block;
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #dadada;
+            margin-bottom: 20px;
+        }
+
+        label#checkbox {
+
+            color: #525252;
+        }
+
+        a#login {
+
+            display: block;
+            padding: 10px;
+            color: #f2f2f2;
+            background-color: #4caf50;
+            text-decoration: none;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        div#forgot {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-top: 1px solid rgb(219, 219, 219);
+        }
+
+        div#forgot button {
+
+            background-color: #f44336;
+            color: #f2f2f2;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 85px;
+            font-size: 14px;
+            font-weight: 1000;
+        }
+
+        span {
+
+            text-decoration: underline;
+            color: #242424;
+        }
+
+        span a{
+
+            color: #242424;
+            transition: all .5s;
+        }
+
+        span a:hover{
+
+            color: #8a8a8a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Login Page</h1>
+
+        <section>
+
+            <p id="xmark"><i class="fa-solid fa-xmark"></i></p>
+
+            <div id="form">
+
+                <div id="profile">
+
+                    <figure><i class="fa-solid fa-user"></i></figure>
+                </div>
+
+                <form action="#">
+
+                    <label id="uname" for="uname">Username</label>
+
+                    <input type="text" name="uname" id="uname" placeholder="Enter Username" required>
+
+                    <label id="uname" for="password">Password</label>
+
+                    <input type="password" name="password" id="password" required placeholder="Enter Password">
+
+                    <a href="#" id="login">Login</a>
+
+                    <input type="checkbox" id="checkbox" checked>
+
+                    <label for="checkbox" id="checkbox">Remember me</label>
+
+                </form>
+
+            </div>
+
+            <div id="forgot">
+
+                <button>Cancel</button>
+                <p id="forgotpassword">forgot <span><a href="#">password?</a></span></p>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
