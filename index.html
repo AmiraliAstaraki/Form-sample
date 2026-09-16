@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="node_modules\@fortawesome\fontawesome-free\css\all.css">
 
     <style>
-        * {
+        /* * {
 
             margin: 0;
             padding: 0;
@@ -36,12 +36,24 @@
             position: relative;
         }
 
-        p#xmark{
+        a#xmark{
 
             position: absolute;
             top: 20px;
             right: 20px;
+            padding: 7px;
+            border-radius: 50%;
             font-size: 20px;
+            color: #525252;
+            transition: all 1s;
+        }
+
+        a#xmark:hover{
+
+            margin: auto;
+            display: block;
+            background-color: #b9b9b9;
+            color: #f2f2f2;
         }
 
         div#profile {
@@ -101,6 +113,13 @@
             text-align: center;
             margin-bottom: 20px;
             font-size: 20px;
+            transition: all .5s;
+        }
+
+        a#login:hover{
+
+            background-color: #3d9640;
+            box-shadow: 0px 0px 10px #535353;
         }
 
         div#forgot {
@@ -140,7 +159,7 @@
         span a:hover{
 
             color: #8a8a8a;
-        }
+        } */
     </style>
 </head>
 
@@ -152,7 +171,7 @@
 
         <section>
 
-            <p id="xmark"><i class="fa-solid fa-xmark"></i></p>
+            <a id="xmark"><i class="fa-solid fa-xmark"></i></a>
 
             <div id="form">
 
